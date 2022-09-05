@@ -1,9 +1,20 @@
 const express = require("express");
-const directorsRouter = express.Router();
+const moviesRouter = express.Router();
 
-/* GET users listing. */
-directorsRouter.get("/", (req, res, next) => {
-  res.send("respond with a resource");
-});
+const {
+  create_new_movie,
+  retrieve_all_movies,
+  add_director_to_movie,
+  add_new_rating_to_movie,
+  add_actor_to_movie,
+} = require("../controllers/movies");
 
-module.exports = directorsRouter;
+moviesRouter.route("/").post(create_new_movie).get(retrieve_all_movies);
+
+moviesRouter.route("/:id").patch(add_director_to_movie);
+
+moviesRouter.route("/:id/rating").patch(add_new_rating_to_movie);
+
+moviesRouter.route("/:id/actor").patch(add_actor_to_movie);
+
+module.exports = moviesRouter;
