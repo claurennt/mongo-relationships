@@ -2,7 +2,7 @@
 
 Thir repo contains the live coding done during the small session about relationships in Mongoose/MongoDB done with batch 29!
 
-Endpoints:
+## Endpoints:
 
 ### /movies
 GET-> retrieves all the movies
