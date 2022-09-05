@@ -1,6 +1,6 @@
-# mongo-relationships
+# 🔁   mongo-relationships 🔁  
 
-Thir repo contains the live coding done during th small session about relationships in Mongoose/MongoDB
+Thir repo contains the live coding done during the small session about relationships in Mongoose/MongoDB done with batch 29!
 
 Endpoints:
 
